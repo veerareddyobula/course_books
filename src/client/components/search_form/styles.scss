@@ -1,0 +1,15 @@
+.search-form {
+    display: grid;
+    grid-template-columns: 40rem 6rem;
+    grid-gap: 8px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: flex-end;
+    }
+  }
