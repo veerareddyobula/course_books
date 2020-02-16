@@ -1,0 +1,10 @@
+{
+  "name": "course_books",
+  "version": "1.0.0",
+  "description": "A sample CourseBooks Summary Search Project",
+  "main": "index.js",
+  "repository": "https://github.com/obulareddyveera/course_books.git",
+  "author": "veera <obulareddyveera@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
