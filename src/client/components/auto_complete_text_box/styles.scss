@@ -1,0 +1,46 @@
+.auto-complete {
+    position: relative;
+
+    div {
+        position: absolute;
+        overflow: auto;
+        -webkit-box-shadow: 3px 3px 5px 6px transparent;
+        -moz-box-shadow:    3px 3px 5px 6px transparent;
+        box-shadow:         3px 3px 5px 6px transparent;
+        border: 1px solid #fff;
+        background-color: #ced4da;
+        width: 100%;
+        height: auto;
+        max-height: 20rem;
+        z-index: 999;
+
+        ul {
+            list-style: none;
+            overflow: scroll;
+            padding: 0px;
+            list-style-type: none;
+            margin: 0px;
+
+            li {
+                line-height: 2rem;
+                border-bottom: 1px solid #fff;
+                padding: 6px;
+                text-align: left;
+                cursor: pointer;
+            }
+
+            li:first-child {
+                padding-top: 0px;
+            }
+
+            li:last-child{
+                border-bottom: 0px;
+                padding-bottom: 0px;
+            }
+
+            li:hover {
+                background-color: #c2c2c2;
+            }
+        }
+    }
+}
