@@ -24,11 +24,12 @@
     }
 
     div:nth-child( odd ) {
-        background-color: #c2c2c2;
+        background-color: #c1c1c1;
         font-weight: bold;
     }
 
     .truncate {
+        display: block;
         max-width: 150px;
         white-space: nowrap;
         overflow: hidden;
