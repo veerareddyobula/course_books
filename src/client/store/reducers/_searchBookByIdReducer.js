@@ -12,7 +12,6 @@ const searchBookById = (selectedBooks = [], action) => {
     case SEARCH_BOOK_BY_ID_PENDING:
       return [...selectedBooks];
     case SEARCH_BOOK_BY_ID_SUCCESS:
-      console.log('--== searchBookById :: SEARCH_BOOK_BY_ID_SUCCESS ', payload.data);
       selectedBooks.push(...payload.data);
       return [...selectedBooks];
     case SEARCH_BOOK_BY_ID_ERROR:

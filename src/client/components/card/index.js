@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
 
-const BookDisplayCard = (props) => {
-  const { details } = props;
-  console.log('--== TableDisplay --= ', details);
+const BookDisplayCard = ({ details }) => {
   return (
     <div className="card">
       <div>Title</div>

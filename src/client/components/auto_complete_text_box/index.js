@@ -15,7 +15,6 @@ const AutoCompleteTextBox = (props) => {
 
   React.useEffect(() => {
     const { booksTitlesList } = props;
-    console.log('---== booksTitlesList ', booksTitlesList);
     const temp = booksTitlesList.filter(item => item.includes(val) && item !== val);
     setFilteredQueries(temp);
   }, [val]);

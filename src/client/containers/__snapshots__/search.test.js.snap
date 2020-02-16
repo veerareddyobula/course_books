@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchContainer Component SearchContainer Component Snapshot 1`] = `
+Array [
+  <h1>
+    Search Books
+  </h1>,
+  <div
+    className="search-form"
+  >
+    <div
+      className="auto-complete"
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Search books"
+        type="text"
+        value=""
+      />
+      
+    </div>
+    <div>
+      <button
+        className="btn-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        Submit
+      </button>
+    </div>
+  </div>,
+  <div
+    className="mt-2"
+  >
+    <div>
+      No Books Selected
+    </div>
+  </div>,
+]
+`;
