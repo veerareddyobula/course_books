@@ -12,7 +12,6 @@ const SearchPage = (props) => {
   });
   const getKey = React.useCallback(index => Math.random() + new Date().getTime() + index);
   const { selectedBooks } = props;
-  console.log('--== SearchPage ::: selectedBooks ', selectedBooks);
   return (
     <>
       <h1>Search Books</h1>

@@ -6,7 +6,6 @@ import {
 
 const fetchTitlesList = (booksTitlesList = [], action) => {
   const { payload } = action;
-  console.log('--== fetchTitlesList ::: action.type ', payload);
   switch (action.type) {
     case FETCH_TITLES_LIST_PENDING:
       return [...booksTitlesList];

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutoCompleteTextBox Component AutoCompleteTextBox Component Snapshot 1`] = `
+<div
+  className="auto-complete"
+>
+  <input
+    onChange={[Function]}
+    placeholder="Search books"
+    type="text"
+    value="Fr"
+  />
+  <div>
+    <ul />
+  </div>
+</div>
+`;

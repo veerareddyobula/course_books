@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookDisplayCard Component BookDisplayCard Component Snapshot 1`] = `
+<div
+  className="card"
+>
+  <div>
+    Title
+  </div>
+  <div>
+    Letters from a Self-Made Merchant to His Son
+  </div>
+  <div>
+    Author
+  </div>
+  <div>
+    Anna Quindlen
+  </div>
+  <div>
+    Short Summary
+  </div>
+  <div
+    className="truncate"
+  >
+    The Book in Three Sentences: The only thing you have that nobody else has is control of your life. The hardest thing of all is to learn to love the journey, not the destination. Get a real life rather than frantically chasing the next level of success.
+  </div>
+</div>
+`;
