@@ -26,6 +26,12 @@ body {
         cursor: pointer;
     }
 
+    button:disabled {
+        background-color: #c1c1c1;
+        border-color: #c2c2c2;
+        cursor: crosshair;
+    }
+
     .container-fluid {
         width: 100%;
         height: auto;

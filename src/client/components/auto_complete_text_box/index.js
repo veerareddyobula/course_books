@@ -6,7 +6,7 @@ import './styles.scss';
 import { fetchTitlesList } from '../../store/actions';
 
 const AutoCompleteTextBox = (props) => {
-  const { val, onChangeHandler } = props;
+  const { val, onChangeHandler, children } = props;
   const [filteredQueries, setFilteredQueries] = React.useState([]);
 
   React.useEffect(() => {
@@ -24,7 +24,7 @@ const AutoCompleteTextBox = (props) => {
 
   return (
     <div className="auto-complete">
-      <input type="text" placeholder="Search books" value={val} onChange={event => onChangeHandler(event.target.value)} />
+      { children }
       {
             val && val.length > 0 && (
             <div>
@@ -32,7 +32,12 @@ const AutoCompleteTextBox = (props) => {
                 {
                     filteredQueries && filteredQueries.map((item, index) => (
                     // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-                      <li key={getKey(index)} onClick={() => onChangeHandler(item)}>{item}</li>
+                      <li
+                        key={getKey(index)}
+                        onClick={() => onChangeHandler({ queryString: item })}
+                      >
+                        {item}
+                      </li>
                     ))
                 }
               </ul>
@@ -47,7 +52,8 @@ AutoCompleteTextBox.propTypes = {
   val: PropTypes.string.isRequired,
   onChangeHandler: PropTypes.func.isRequired,
   fetchTitlesList: PropTypes.func.isRequired,
-  booksTitlesList: PropTypes.arrayOf(PropTypes.string).isRequired
+  booksTitlesList: PropTypes.arrayOf(PropTypes.string).isRequired,
+  children: PropTypes.shape.isRequired
 };
 
 const mapStateToProps = state => ({

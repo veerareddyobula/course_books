@@ -5,30 +5,36 @@ Array [
   <h1>
     Search Books
   </h1>,
-  <div
-    className="search-form"
+  <form
+    action="#"
+    onReset={[Function]}
+    onSubmit={[Function]}
   >
     <div
-      className="auto-complete"
+      className="search-form"
     >
-      <input
-        onChange={[Function]}
-        placeholder="Search books"
-        type="text"
-        value=""
-      />
-      
-    </div>
-    <div>
-      <button
-        className="btn-primary"
-        onClick={[Function]}
-        type="button"
+      <div
+        className="auto-complete"
       >
-        Submit
-      </button>
+        <input
+          name="queryString"
+          onBlur={[Function]}
+          onChange={[Function]}
+          value=""
+        />
+        
+      </div>
+      <div>
+        <button
+          className="btn-primary"
+          disabled={true}
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
     </div>
-  </div>,
+  </form>,
   <div
     className="mt-2"
   >

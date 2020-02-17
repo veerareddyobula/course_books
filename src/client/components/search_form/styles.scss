@@ -4,6 +4,13 @@
     grid-gap: 8px;
     align-items: flex-end;
     justify-content: center;
+
+    .warning {
+        float: left;
+        color:  #dc3545!important;
+        text-align: start;
+        background-color: transparent;
+    }
 }
 
 @media only screen and (max-width: 600px) {
